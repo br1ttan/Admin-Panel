@@ -1,0 +1,24 @@
+:host {
+    max-width: 250px;
+    min-width: 250px;
+    overflow: hidden;
+    border-right: 1px solid black;
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 65px;
+    
+        .logo {
+            font-family: 'Quicksand';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16.7475px;
+            line-height: 21px;
+
+            color: #0F4264;
+        }
+    }
+}

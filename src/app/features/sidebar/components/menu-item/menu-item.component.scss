@@ -1,0 +1,28 @@
+.item {
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    gap: 18px;
+    width: 155px;
+    height: 30px;
+    user-select: none;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    border-radius: 4px;
+    color: var(--sidebar-untoggled-color);
+    cursor: pointer;
+    margin-bottom: 11px;
+
+    &-image {
+        max-width: 30px;
+        max-height: 30px;
+    }
+}
+
+.active {
+    color: var(--sidebar-toggled-color);
+    background-color: var(--sidebar-toggled-background);
+}

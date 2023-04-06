@@ -1,0 +1,19 @@
+.header {
+    min-height: 105px;
+    width: 100%;
+    border-bottom: 1px solid black;
+    padding: 0 15px;
+
+    .menu {
+        padding-top: 45px;
+
+        .title {
+            color: var(--color-a);
+            font-family: 'Suprema';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 43.3726px;
+            line-height: 53px;
+        }
+    }
+}
