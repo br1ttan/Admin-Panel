@@ -1,3 +1,8 @@
 export enum AppRouteEnum {
-    Home = ''
+    Overview = '',
+    Transactions = 'transactions',
+    Cards = 'cards',
+    Invoices = 'invoices',
+    Goals = 'goals',
+    Settings = 'settings'
 }
