@@ -1,0 +1,24 @@
+<div class="item">
+    <div class="reciever">
+        <span>
+            <img class="cart-icon" src="assets/icons/cart.svg" alt="cart">
+        </span>
+        <span>
+            {{ data.name }}
+        </span>
+    </div>
+    <div class="type">
+        <span>
+            {{ data.type }}
+        </span>
+    </div>
+    <div class="date">
+        <span>
+            {{ data.date | date }}
+        </span>
+    </div>
+    <div class="amount">
+        <span>$ {{ data.amount }}</span>
+    </div>
+</div>
+<mat-divider></mat-divider>

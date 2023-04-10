@@ -1,1 +1,21 @@
-<p>Transactions works!</p>
+<mat-card class="card">
+    <mat-card-title>Transaction history</mat-card-title>
+    <div class="view">
+        <mat-card-subtitle>You can make a new transaction</mat-card-subtitle>
+        
+        <button (click)="openDialog()" mat-icon-button color="primary">
+            <mat-icon>add</mat-icon>
+        </button>
+    </div>
+    <ng-container *ngIf="(transactionStorageService.storage$ | async) as transactions">
+        <div class="transaction-panel">
+            <span>Reciever</span>
+            <span>Type</span>
+            <span>Date</span>
+            <span>Amount</span>
+        </div>
+        <transaction-item 
+            *ngFor="let data of transactions"
+            [data]="data"></transaction-item>
+    </ng-container>
+</mat-card>

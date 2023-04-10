@@ -4,5 +4,6 @@ export enum AppRouteEnum {
     Cards = 'cards',
     Invoices = 'invoices',
     Goals = 'goals',
-    Settings = 'settings'
+    Settings = 'settings',
+    Terminal = 'terminal'
 }

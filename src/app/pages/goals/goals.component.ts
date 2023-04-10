@@ -1,4 +1,7 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { AppRouteEnum } from '@core';
+import { RouteNavigateService } from '@features/route';
+import { BaseComponent } from '../base.component';
 
 @Component({
   selector: 'app-goals',
@@ -6,4 +9,8 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   styleUrls: ['./goals.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class GoalsComponent {}
+export class GoalsComponent extends BaseComponent {
+  constructor() {
+    super(AppRouteEnum.Goals);
+  }
+}

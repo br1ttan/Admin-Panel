@@ -1,0 +1,19 @@
+.item {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    min-height: 42px;
+    align-items: center;
+
+    .reciever {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        
+        .cart-icon {
+            width: 25px;
+            height: 25px;
+        }
+    }
+}

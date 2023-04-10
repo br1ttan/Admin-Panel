@@ -1,14 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SidebarModule } from './sidebar';
+import { TransactionsModule } from './transactions';
 
 @NgModule({
   imports: [
     CommonModule,
-    SidebarModule
   ],
   exports: [
-    SidebarModule
+    TransactionsModule
   ]
 })
 export class FeaturesModule { }

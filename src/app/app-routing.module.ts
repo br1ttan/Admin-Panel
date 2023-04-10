@@ -37,7 +37,12 @@ const routes: Routes = [
         path: AppRouteEnum.Settings,
         loadChildren: () => import('./pages/settings/settings.module')
           .then((m) => m.SettingsModule)
-      }
+      },
+      {
+        path: AppRouteEnum.Terminal,
+        loadChildren: () => import('./pages/terminal/terminal.module')
+          .then((m) => m.TerminalModule)
+      },
     ]
   }
 ];

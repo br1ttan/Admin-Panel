@@ -1,0 +1,16 @@
+<div #parentElement class="parent">
+    <div 
+        *ngFor="let item of sidebarMenuItemArray"
+        (click)="onClick(itemElement)"
+        [attr.RouteName]="item.route"
+        [routerLink]="item.route"
+        #itemElement
+        class="item">
+        <span>
+            <img [src]="item.srcPath" [alt]="item.title" class="item-image">
+        </span>
+        <span class="item-title">
+            {{ item.title }}
+        </span>
+    </div>
+</div>

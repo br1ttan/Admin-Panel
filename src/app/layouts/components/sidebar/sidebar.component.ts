@@ -1,5 +1,6 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { SidebarMenuItemService, SidebarMenuItemTitleEnum } from '@features/sidebar';
+import { SidebarMenuItemTitleEnum } from './components/menu-item/enums';
+import { RouteNavigateService } from '@features/route';
 
 @Component({
   selector: 'app-sidebar',
@@ -8,11 +9,11 @@ import { SidebarMenuItemService, SidebarMenuItemTitleEnum } from '@features/side
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class SidebarComponent {
+  
   constructor(
-    private readonly sidebarMenuItemService: SidebarMenuItemService
+    private readonly routeNavigateService: RouteNavigateService
   ) {}
 
   public initializeMenuItem(item: SidebarMenuItemTitleEnum): void {
-    this.sidebarMenuItemService.updateActivatedMenuItem(item);
   }
 }

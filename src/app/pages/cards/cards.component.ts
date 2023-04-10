@@ -1,4 +1,6 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { AppRouteEnum } from '@core';
+import { BaseComponent } from '../base.component';
 
 @Component({
   selector: 'app-cards',
@@ -6,4 +8,8 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   styleUrls: ['./cards.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class CardsComponent {}
+export class CardsComponent extends BaseComponent {
+  constructor() {
+    super(AppRouteEnum.Cards);
+  }
+}

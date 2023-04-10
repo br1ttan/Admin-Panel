@@ -1,4 +1,6 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { BaseComponent } from '../base.component';
+import { AppRouteEnum } from '@core';
 
 @Component({
   selector: 'app-overview',
@@ -6,4 +8,8 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   styleUrls: ['./overview.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class OverviewComponent {}
+export class OverviewComponent extends BaseComponent {
+  constructor() {
+    super(AppRouteEnum.Overview);
+  }
+}
